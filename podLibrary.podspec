@@ -32,13 +32,14 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '8.0'
 
   s.subspec 'lib' do |libResource| 
+    libResource.source_files = 'Pod/Classes/lib/**/*'
     libResource.public_header_files = 'Pod/Classes/lib/**/*.h'
     libResource.vendored_libraries = 'Pod/Classes/lib/*.{a}'
   end
 
-  s.subspec 'resource' do |danmakuFile| 
-    danmakuFile.source_files = 'Pod/Classes/resource/**/*'
-  end
+  # s.subspec 'resource' do |danmakuFile| 
+  #   danmakuFile.source_files = 'Pod/Classes/resource/**/*'
+  # end
   # s.default_subspec = 'zip'
   # s.subspec 'zip' do |zip|
   #   puts '-------------------------------------------------------------------'
