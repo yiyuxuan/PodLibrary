@@ -26,7 +26,8 @@ TODO: Add long description of the pod here.
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author             = { "wangcheng" => "251350972@qq.com" }
   # s.source           = { :git => 'https://github.com/${USER_NAME}/${POD_NAME}.git', :tag => s.version.to_s }
-  s.source = { :http  => 'http://opes42bvg.bkt.clouddn.com/TestFramework.framework.zip'}
+  s.source = { :http  => 'https://github.com/yiyuxuan/PodLibrary.git'}
+  # http://opes42bvg.bkt.clouddn.com/TestFramework.framework.zip
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
@@ -34,7 +35,7 @@ TODO: Add long description of the pod here.
   s.subspec 'lib' do |libResource| 
     libResource.source_files = 'Pod/Classes/lib/**/*'
     libResource.public_header_files = 'Pod/Classes/lib/**/*.h'
-    libResource.vendored_libraries = 'Pod/Classes/lib/*.{a}'
+    # libResource.vendored_libraries = 'Pod/Classes/lib/*.{a}'
   end
 
   # s.subspec 'resource' do |danmakuFile| 
