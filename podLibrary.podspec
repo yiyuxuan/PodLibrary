@@ -35,7 +35,7 @@ TODO: Add long description of the pod here.
   s.subspec 'lib' do |libResource| 
     libResource.source_files = 'Pod/Classes/lib/**/*'
     libResource.public_header_files = 'Pod/Classes/lib/**/*.h'
-    # libResource.vendored_libraries = 'Pod/Classes/lib/*.{a}'
+    libResource.vendored_libraries = 'Pod/Classes/lib/*.{a}'
   end
 
   # s.subspec 'resource' do |danmakuFile| 
