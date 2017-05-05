@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'podLibrary'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'A short description of podLibrary.'
 
 # This description is used to generate tags and improve search results.
@@ -29,10 +29,13 @@ TODO: Add long description of the pod here.
   s.source = { :http  => 'https://github.com/yiyuxuan/PodLibrary.git'}
   # http://opes42bvg.bkt.clouddn.com/TestFramework.framework.zip
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-  s.source_files = 'Pod/Classes/lib/**/*'
+  s.source_files = 'Pod/Classes/code/**/*'
   s.ios.deployment_target = '8.0'
-  s.public_header_files = 'Pod/Classes/lib/*.h'
-  s.vendored_libraries = 'Pod/Classes/lib/*.a'
+  s.subspec 'code' do |codeResource| 
+    codeResource.source_files = 'Pod/Classes/code/*.{h,m}'
+  end
+  # s.public_header_files = 'Pod/Classes/lib/*.h'
+  # s.vendored_libraries = 'Pod/Classes/lib/*.a'
   # s.subspec 'lib' do |libResource| 
   #   # libResource.source_files = 'Pod/Classes/lib/**/*'
   #   libResource.public_header_files = 'Pod/Classes/lib/**/*.h'
